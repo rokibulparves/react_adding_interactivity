@@ -10,6 +10,9 @@ export default function ItemList({ list, onToggle }) {
                 type="checkbox"
                 checked={list.seen}
                 onChange={(e) => {
+                  {
+                    /* Here we sending each item id and check state by function came from top level*/
+                  }
                   onToggle(list.id, e.target.checked);
                 }}
               />
